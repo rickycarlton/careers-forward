@@ -1,0 +1,53 @@
+// *************************************
+//
+//   Well
+//   -> Vertical spacing
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .well[.well--l]
+//   / ...
+//
+// *************************************
+
+.well {
+  margin-bottom: $b-space;
+  margin-top: $b-space;
+}
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Sizes ----- //
+
+.well--l {
+  margin-bottom: $b-space-l;
+  margin-top: $b-space-l;
+}
+
+.well--xl {
+  margin-bottom: $b-space-l;
+  margin-top: $b-space-l;
+  @media screen and (min-width: $g-m) {
+	margin-bottom: $b-space-xl;
+	margin-top: $b-space-xl;
+  }
+}
+.lt-ie9 {
+  .well--xl {
+    margin-bottom: $b-space-xl;
+    margin-top: $b-space-xl;
+  }
+}
+
+.well--xxl {
+   margin-bottom: $b-space-xl;
+    margin-top: $b-space-xl;
+   @media screen and (min-width: $g-m) {
+    margin-bottom: $b-space-xxl;
+    margin-top: $b-space-xxl;
+  }
+}

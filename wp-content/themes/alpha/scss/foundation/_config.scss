@@ -1,0 +1,210 @@
+// *************************************
+//
+//   Config
+//   -> Fonts, Variables
+//
+// *************************************
+
+// -------------------------------------
+//   @font-face
+// -------------------------------------
+
+// ----- Neris ----- //
+
+@font-face {
+    font-family: 'nerisblack';
+    src: url('../fonts/neris/Neris-Black-webfont.eot');
+    src: url('../fonts/neris/Neris-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/neris/Neris-Black-webfont.woff') format('woff'),
+         url('../fonts/neris/Neris-Black-webfont.ttf') format('truetype'),
+         url('../fonts/neris/Neris-Black-webfont.svg#nerisblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nerissemibold';
+    src: url('../fonts/neris/Neris-SemiBold-webfont.eot');
+    src: url('../fonts/neris/Neris-SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/neris/Neris-SemiBold-webfont.woff') format('woff'),
+         url('../fonts/neris/Neris-SemiBold-webfont.ttf') format('truetype'),
+         url('../fonts/neris/Neris-SemiBold-webfont.svg#nerissemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'neristhin';
+    src: url('../fonts/neris/Neris-Thin-webfont.eot');
+    src: url('../fonts/neris/Neris-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/neris/Neris-Thin-webfont.woff') format('woff'),
+         url('../fonts/neris/Neris-Thin-webfont.ttf') format('truetype'),
+         url('../fonts/neris/Neris-Thin-webfont.svg#nerislight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+// ----- Open Sans ----- //
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans/regular/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans/regular/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans/regular/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans/regular/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans/regular/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans/semibold/OpenSans-Semibold-webfont.eot');
+    src: url('../fonts/OpenSans/semibold/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans/semibold/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans/semibold/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans/semibold/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans/bold/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/OpenSans/bold/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans/bold/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans/bold/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans/bold/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans/italic/OpenSans-Italic-webfont.eot');
+    src: url('../fonts/OpenSans/italic/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans/italic/OpenSans-Italic-webfont.woff') format('woff'),
+         url('../fonts/OpenSans/italic/OpenSans-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans/italic/OpenSans-Italic-webfont.svg#open_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
+// -------------------------------------
+//   Colors
+// -------------------------------------
+
+// ----- Palette ----- //
+
+$c-header: #28323d;
+$c-primary: #33c3ff;
+$c-secondary: #c0d75d;
+$c-third: #bc3939;
+$c-invert: white;
+
+
+// ----- Base ----- //
+
+$c-background-invert: white;
+$c-background: #ecf0f1;
+$c-border: lighten($c-header, 30%);
+$c-highlight: $c-header;
+$c-highlight-dark: shade($c-header, 20%);
+$c-subdue: lighten($c-header, 40%);
+$c-text-invert: white;
+$c-text: #444444;
+$c-text-dark: #333333;
+$c-text-grey: #757575;
+
+// ----- Components ----- //
+
+// ...
+
+// ----- Structures ----- //
+
+// ...
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+// ----- Borders & Box Shadow ----- //
+
+$b-borderRadius: 3px;
+$b-borderStyle: solid;
+$b-borderWidth: 2px;
+$b-border: $b-borderWidth $b-borderStyle $c-border;
+$b-boxShadow: 0 2px 0 rgba($c-text, 0.25);
+
+// ----- Typography ----- //
+
+$b-fontFamily-heading: neristhin;
+$b-fontFamily: OpenSans;
+$b-fontFamily-bold: nerissemibold;
+$b-fontSize: 16px;
+$b-fontSize-xs: 60%;
+$b-fontSize-s: 75%;
+$b-fontSize-m: 90%;
+$b-fontSize-l: 115%;
+$b-fontSize-xl: 150%;
+$b-fontSize-xxl: 175%;
+$b-fontSize-xxxl: 200%;
+$b-fontSize-4xl: 300%;
+$b-fontSize-5xl: 400%;
+$b-lineHeight: 1.8;
+
+// ----- Sizing ----- //
+
+$b-maxWidth: em(1024px);
+$b-maxWidth-s: em(700px);
+$b-space: em(20px);
+$b-space-xs: 0.25 * $b-space;
+$b-space-s: 0.5 * $b-space;
+$b-space-l: 2 * $b-space;
+$b-space-xl: 4 * $b-space;
+$b-space-xxl: 6 * $b-space;
+
+// -------------------------------------
+//   Components
+// -------------------------------------
+
+// ----- Grid ----- //
+
+// Breakpoints
+
+$g-s: em(768px);
+$g-m: em(1000px);
+$g-l: em(1024px);
+
+$g-s-max: em(767px);
+$g-m-max: em(999px);
+
+// Settings
+
+$g-columns: 12;
+$g-defaults: "s" $g-s, "m" $g-m, "l" $g-l;
+$g-gutter: 20px;
+$g-silent: false;
+
+// Selector
+
+$g-selector: if($g-silent, unquote("%"), unquote("."));
+
+// -------------------------------------
+//   Structures
+// -------------------------------------
+
+// ----- Header ----- //
+
+$header-height: 100px;
+$header-height-mobile: 0.55 * $header-height;
+
+
+// ----- Nav ----- //
+
+$nav-height: 70px;

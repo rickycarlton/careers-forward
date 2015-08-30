@@ -1,0 +1,105 @@
+// *************************************
+//
+//   Footer
+//   -> Top lead-in
+//
+// *************************************
+
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+.footer {
+	min-height: 300px;
+}
+
+.social-icon {
+	font-size: 200%;
+	color: tint($c-secondary,50%);
+}
+
+.footer-mountains {
+	text-align: center;
+	color: #fff;
+	// margin-top: -166px;
+	// padding-top: 166px;
+	height: 166px;
+	width: 100%;
+	background: url("/wp-content/themes/launchthat/images/footer-mountain.png") no-repeat top center;
+}
+
+
+.footer {
+	color: #a5a6a7;
+	a {
+		&:hover {
+			color: $c-text-invert;
+		}
+	}
+}
+
+// ----- Footer Icons ----- //
+
+.footer-icons {
+	a {
+		color: lighten($c-header,20%);
+		padding: 0 $b-space-xs;
+		font-size: $b-fontSize-xxl;
+	}
+}
+
+// ----- Footer Links ----- //
+
+.footer-links {
+	a {
+		color: lighten($c-header,30%);
+		padding: 0 $b-space-s;
+		border-right: 1px solid lighten($c-header,10%);
+		display: inline-block;
+		margin-bottom: $b-space-s;
+		white-space: nowrap;
+		&:last-child {
+			border: none;
+		}
+	}
+}
+
+// ----- Copyright ----- //
+
+.footer-copyright {
+	color: lighten($c-header,15%);
+	font-size: $b-fontSize-s;
+}
+
+
+// ----- Footer List ----- //
+
+.footer-list-link {
+	border: 0;
+	color: #a5a6a7;
+}
+
+// ----- Footer Logo ----- //
+
+.footer-logo {
+	max-width: 250px;
+}
+
+.footer-about {
+	float: right;
+	width: 75%;
+}
+
+// .footer-copyright {
+// 	color: lighten($c-header,15%);
+// 	font-size: 60%;
+// 	@media screen and (min-width: $g-m) {
+// 		bottom: 1.25em;
+// 		left: 50%;
+// 		position: absolute;
+// 		-webkit-transform: translateX(-50%);
+// 		-ms-transform: translateX(-50%);
+// 		transform: translateX(-50%);
+// 	}
+// }

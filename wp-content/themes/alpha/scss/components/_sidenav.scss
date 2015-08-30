@@ -1,0 +1,50 @@
+// *************************************
+//
+//   Side Nav
+//   -> Individual style containers
+//
+// -------------------------------------
+//   Template (html)
+// -------------------------------------
+//
+// .side-nav
+// 		.iconBlock__icon
+//   		/ ...
+//
+// *************************************
+
+.sidebar-form {
+	background: $c-grey;
+	padding: $b-space;
+}
+
+.sidebar-form__textarea,
+.sidebar-form__input {
+	// padding: $b-space-s $b-space;
+	// margin-bottom: $b-space-s;
+	// height: auto;	
+	// box-shadow: none;
+	// border: none;
+	// width: 100%;
+}
+
+.sidebar-form__textarea {
+	height: 100px;
+	max-height: 200px;
+	resize: vertical;
+}
+
+.sidebar-form__btn {
+	width: 100%;
+	display: block;
+}
+
+.sidebar-form-header {
+	border-top: 7px solid $c-action;
+	color: shade($c-grey,50%);
+	border-bottom: 1px solid darken($c-grey,10%);
+}
+
+.sidebar-form-header-title {
+	color: $c-text;
+}

@@ -1,0 +1,101 @@
+// *************************************
+//
+//   Instagram
+//   -> Top lead-in
+//
+// *************************************
+// -------------------------------------
+//   Template (html)
+// -------------------------------------
+//
+// header.header
+//   ..
+//
+// *************************************
+
+// .masonry-item { width: 20%; }
+// .masonry-item.w2 { width: 50%; }
+
+.masonry-container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+figure.masonry-item {
+	margin: 0;
+	img {
+		margin-right: 12px;
+		margin-bottom: 12px;
+		float: left;
+	}
+}
+
+.instagram-well {
+	padding-top: $b-space * 8;
+	padding-bottom: $b-space * 8;
+}
+
+.instagram-header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	display: table;
+	border-collapse: separate;
+	border-spacing: 2px;
+	border-color: gray;
+}
+
+.instagram-heading {
+	font-size: 230%;
+}
+
+@mixin alpha-attribute($attribute, $color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  #{$attribute}: $solid-color;
+  #{$attribute}: $color;
+}
+
+.instagram-overylay {
+	height: 125%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.instagram-image.image-1, .instagram-image.image-2,
+.instagram-image.image-4, .instagram-image.image-5,
+.instagram-image.image-6, .instagram-image.image-7,
+.instagram-image.image-9, .instagram-image.image-10 {
+	width: 25%;
+}
+
+.instagram-image.image-1 img, .instagram-image.image-2 img,
+.instagram-image.image-4 img, .instagram-image.image-5 img,
+.instagram-image.image-6 img, .instagram-image.image-7 img,
+.instagram-image.image-9 img, .instagram-image.image-10 img {
+	// max-width: 150px;
+}
+
+.instagram-image.image-3 img, .instagram-image.image-8 img {
+	// max-width: 300px;
+}
+
+.instagram-image.image-3, .instagram-image.image-8 {
+	width: 50%;
+}
+
+.instagram-image {
+	// max-height: 300px;
+	// min-height: 300px;
+}

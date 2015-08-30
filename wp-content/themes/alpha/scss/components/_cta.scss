@@ -1,0 +1,59 @@
+// *************************************
+//
+//   CTA
+//   -> Individual style containers
+//
+// -------------------------------------
+//   Template (HTML)
+// -------------------------------------
+//
+// .cta-table
+// 		.cta-table__cell
+// 			span.cta-table__title
+//   			/ ...
+//
+// *************************************
+
+.cta-table__title {
+	margin-bottom: $b-space-s;
+	display: inline-block;
+	@media screen and (min-width: $g-m) {
+		margin-bottom: 0;
+	}
+}
+@media screen and (min-width: $g-m) {
+	.cta-table {
+		display: table;
+		height: 50px;
+	}
+	.cta-table__cell {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+.lt-ie9 {
+	.cta-table__title {
+		margin-bottom: 0;
+	}
+	.cta-table {
+		display: table;
+		height: 50px;
+	}
+	.cta-table__cell {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+
+// -------------------------------------
+//   Side CTA
+// -------------------------------------
+
+
+.side-cta {
+
+}
+.side-cta__top {
+}

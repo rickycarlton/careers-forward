@@ -1,0 +1,161 @@
+// *************************************
+//
+//   Base
+//   -> Tag-level settings
+//
+// *************************************
+
+html {
+  background: $c-background;
+  color: $c-text;
+  font-family: $b-fontFamily;
+  font-size: $b-fontSize;
+  line-height: $b-lineHeight;
+}
+
+body {
+  font-size: 100%;
+}
+
+// -------------------------------------
+//   Tracking Pixel
+// -------------------------------------
+.mobile-check {
+  display: block;
+  height: 1px;
+  width: 1px;
+  position: fixed;
+  top: 0;
+  right: 0;z-index: -2;
+   @media screen and (min-width: $g-m) {
+    display: none;
+   }
+}
+
+.lt-ie9 {
+  .mobile-check {
+     display: none;
+  }
+}
+
+// -------------------------------------
+//   Block Content
+// -------------------------------------
+
+ul, p {
+  margin-bottom: $b-space;
+  margin-top: 0;
+}
+
+p {
+  font-size: 100%;
+  @media screen and (min-width: $g-m) {
+    font-size: 115%;
+  }
+}
+
+li {
+  margin-bottom: $b-space-s;
+  margin-top: 0;
+}
+
+// ----- Headings ----- //
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  font-family: $b-fontFamily-heading;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: $b-space-xs;
+  margin-top: 0;
+}
+
+h1, .h1 {
+  font-size: 200%;
+}
+
+h2, .h2 {
+  font-size: 150%;
+  @media screen and (min-width: $g-m) {
+    font-size: 165%;
+  }
+}
+
+h3, .h3 {
+  font-size: 125%;
+  color: $c-primary;
+  @media screen and (min-width: $g-m) {
+  font-size: 140%;
+  }
+}
+
+h4, .h4 {
+  font-size: 110%;
+}
+
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  font-weight: normal;
+}
+
+
+// -------------------------------------
+//   Inline Content
+// -------------------------------------
+
+// ----- Links ----- //
+
+a {
+  // border-bottom: $b-border;
+  color: $c-highlight;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    // border-bottom-color: $c-highlight;
+    color: $c-subdue;
+  }
+}
+
+// ----- Images ----- //
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+// ----- Form Elements ----- //
+
+input,
+textarea {
+  padding: $b-space-s $b-space-s;
+  margin-bottom: $b-space-s;
+  height: auto; 
+  box-shadow: none;
+  border: none;
+  width: 100%;
+}
+label {
+  color: white;
+  display: block;
+  font-size: $b-fontSize-m;
+  margin-bottom: $b-space-s
+}
+.select-bg {
+  background: white;
+  margin-bottom: $b-space-s;
+}
+
+select {
+  box-shadow: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  background: white;
+  height: 42px;
+  margin: 0;
+  vertical-align: middle;
+  height: 42px;
+}

@@ -1,0 +1,124 @@
+// *************************************
+//
+//   Careers Page Styles
+//   -> These styles are only for the careers page
+//
+// *************************************
+
+
+// -------------------------------------
+//   Backgrounds
+// -------------------------------------
+
+.perks-bg {
+	background: #323232 url("/wp-content/themes/launchthat/images/bg-city.jpg") no-repeat top center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.bg-ship {
+	background: linear-gradient(
+	rgba(desaturate(tint($c-secondary,16%),8%),.8), 
+	rgba(desaturate(tint($c-secondary,16%),8%),.8)
+	), #9f9f9f url("/wp-content/themes/launchthat/images/bg-ship.jpg") no-repeat top center;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+// -------------------------------------
+//   Lines
+// -------------------------------------
+
+.lead-line {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	display: block;
+	&-line {
+		display: block;
+		width: 3px;
+		background: #fff;
+		height: 100px;
+	}
+	&-circle {
+		height: 16px;
+		width: 16px;
+		background-color: white;
+		display: block;
+		margin-left: -8px;
+		position: absolute;
+		left: 50%;
+	}
+}
+
+
+.top-line {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	display: block;
+	&-line {
+		display: block;
+		width: 3px;
+		background: #ccc;
+		height: 80px;
+	}
+	&-circle {
+		height: 16px;
+		width: 16px;
+		background-color: #ccc;
+		display: block;
+		margin-left: -8px;
+		position: absolute;
+		left: 50%;
+	}
+	&-box {
+		height: 3px;
+		width: 16px;
+		background-color: #ccc;
+		display: block;
+		margin-left: -8px;
+		position: absolute;
+		left: 50%;
+	}
+}
+
+.bottom-line {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	display: block;
+	&-line {
+		display: block;
+		width: 3px;
+		background: #ccc;
+		height: 80px;
+	}
+	&-circle {
+		height: 16px;
+		width: 16px;
+		background-color: #ccc;
+		display: block;
+		margin-left: -8px;
+		position: absolute;
+		left: 50%;
+	}
+	&-box {
+		height: 3px;
+		width: 16px;
+		background-color: #ccc;
+		display: block;
+		margin-left: -8px;
+		position: absolute;
+		left: 50%;
+	}
+}

@@ -1,0 +1,55 @@
+// *************************************
+//
+//   Pattern
+//   -> Pattern backgrounds
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .pattern[.pattern--a|b]
+//   / ...
+//
+// *************************************
+
+.pattern {
+	background-repeat: repeat;
+	&--a {
+		background-image: url(/wp-content/themes/dc/images/patterns/pattern--a.jpg);
+	}
+	&--b {
+		background-image: url(/wp-content/themes/dc/images/patterns/pattern--b.jpg);
+	}
+	&--geosq {
+		&--b {
+			background-image: url(/wp-content/themes/dc/images/patterns/pattern--geosq--b.jpg);
+		}
+		&--t {
+			position: relative;
+			&:before {
+				content: "";
+				background-image: url(/wp-content/themes/dc/images/patterns/pattern--geosq--b.jpg);
+				opacity: 0.65;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				position: absolute;
+			}
+			
+		}
+	}
+	&--maie {
+		@media screen and (max-width: $g-m-max) {
+			background-image: url(/wp-content/themes/dc/images/patterns/pattern--geosq--b.jpg);
+		}
+	}
+}
+
+.lt-ie9 {
+	.pattern {
+		&--maie {
+			background-image: url(/wp-content/themes/dc/images/patterns/pattern--geosq--b.jpg);
+		}
+	}
+}

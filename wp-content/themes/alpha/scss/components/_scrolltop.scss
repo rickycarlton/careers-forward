@@ -1,0 +1,76 @@
+// *************************************
+//
+//   Scroll Top Styles
+//   -> These styles are only for the scroll top button that is fixed to the bottom right 
+//
+// *************************************
+
+
+// -------------------------------------
+//   Lines
+// -------------------------------------
+
+.scroll-top {
+	position: fixed;
+	bottom: -60px;
+	right: 40px;
+	z-index: 300;
+	display: none;
+	font-size: 0.8em;
+	line-height: 14px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	opacity: 0;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+	color: #000;
+	&.is-active {
+		bottom: 40px;
+		filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity: 1;
+		@media screen and (min-width: $g-m) {
+			display: block;
+			font-size: 1em;
+		}
+	}
+	a {
+		outline: none;
+		background: black;
+		filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+		opacity: 0.3;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+		border-radius: 5px;
+		padding: 1em 2em;
+		display: block;
+		color: white;
+		-webkit-transition: 0.5s ease;
+		-moz-transition: 0.5s ease;
+		-o-transition: 0.5s ease;
+		transition: 0.5s ease;
+	}
+	&:hover {
+		a {
+			opacity: .8;
+		}
+		.scroll-top-icon {
+			@include transform(rotate(-45deg));
+		}
+	}
+	&-icon {
+		display: block;
+		margin-bottom: 0.1em;
+		font-weight: normal;
+		font-size: 50px;
+		-webkit-transition: 0.5s ease;
+		-moz-transition: 0.5s ease;
+		-o-transition: 0.5s ease;
+		transition: 0.5s ease;
+	}
+}
