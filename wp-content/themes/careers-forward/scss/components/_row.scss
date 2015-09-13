@@ -29,37 +29,41 @@
 //   Modifiers
 // -------------------------------------
 
-// ----- Theme ----- //
+// ----- Color ----- //
 
-// Primary
-
-.row--a {
-  background: $c-highlight;
+.row--grey--light {
+	background-color: #eee;
 }
 
-// Secondary
-
-.row--b {
-  background: $c-subdue;
+.row--blue {
+	background-color: $blue;
 }
 
-// .well[l]
-//   / ...
-//
-// *************************************
-
-.well {
-  margin-bottom: $b-space;
-  margin-top: $b-space;
+.row--blue--light {
+	background-color: $blue--light;
 }
 
-// -------------------------------------
-//   Modifiers
-// -------------------------------------
-
-// ----- Sizes ----- //
-
-.well--l {
-  margin-bottom: $b-space-l;
-  margin-top: $b-space-l;
+.row--red {
+	background-color: $red;
 }
+
+.row--slate {
+	background-color: $slate;
+}
+
+.row--grey--warm {
+	background-color: $grey--warm;
+}
+
+.row--grey--warm--dark {
+	background-color: $grey--warm--dark;
+}
+
+$blue: #89ACAC;
+$yellow: #CEC32C;
+$red: #B44626;
+
+$slate: #373A3A;
+$blue--light: #D6EAE9;
+$grey--warm: #736759;
+$grey--warm--dark: #2B2A29;

@@ -22,6 +22,14 @@
 }
 
 // -------------------------------------
+//   Font Family
+// -------------------------------------
+
+.ffh {
+    font-family: $b-fontFamily-heading;
+}
+
+// -------------------------------------
 //   Display
 // -------------------------------------
 
@@ -1026,6 +1034,19 @@
     color: $c-text;
 }
 
+.tcg {
+    color: #ccc;
+}
+
+.tc-slate {
+    color: $slate;
+}
+
+.tc-slate-light {
+    color: $slate--light;
+}
+
+
 // ----- Family ----- //
 
 .tfb {
@@ -1114,4 +1135,11 @@
 
 .twb {
     font-weight: bold;
+}
+
+// ----- Clearfix ----- //
+
+.clear {
+    zoom: 1;
+    clear: both;
 }

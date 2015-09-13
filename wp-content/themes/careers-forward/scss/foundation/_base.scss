@@ -6,7 +6,7 @@
 // *************************************
 
 html {
-  background: red;
+  background: $c-background;
   color: $c-text;
   font-family: $b-fontFamily;
   font-size: $b-fontSize;
@@ -25,11 +25,17 @@ body {
 ul, p {
   margin-bottom: $b-space;
   margin-top: 0;
+  letter-spacing: 0.01em;
 }
 
 li {
   margin-bottom: $b-space-s;
   margin-top: 0;
+}
+
+p {
+  font-family: $b-fontFamily;
+  font-weight: 400;
 }
 
 // ----- Headings ----- //
@@ -73,8 +79,7 @@ a {
   text-decoration: none;
   &:hover,
   &:focus {
-    border-bottom-color: $c-highlight;
-    color: $c-subdue;
+    color: darken($c-highlight, 20%);
   }
 }
 

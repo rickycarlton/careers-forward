@@ -24,12 +24,17 @@
 @import 'components/grid';
 @import 'components/row';
 @import 'components/well';
+@import 'components/icon';
+@import 'components/button';
 
 // -------------------------------------
 //   Structures
 // -------------------------------------
 
-@import 'structures/example';
+@import 'structures/navigation';
+@import 'structures/banner';
+@import 'structures/home';
+@import 'structures/footer';
 
 // -------------------------------------
 //   Vendor

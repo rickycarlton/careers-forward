@@ -1,0 +1,86 @@
+// *************************************
+//
+//   Buttons
+//   -> .btn, .btn-- ...
+//
+// *************************************
+
+.btn {
+    color: #333;
+    display: inline-block;
+    height: 60px;
+    letter-spacing: 0.04em;
+    line-height: 60px;
+    zoom: 1;
+    padding: $b-space-xs $b-space-l;
+    margin: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $b-fontFamily-heading;
+    font-size: $b-fontSize;
+    text-align: center;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+
+    &--wide {
+        width: 100%;
+        height: auto;
+        @media screen and (min-width: $g-m) {
+            max-width: 350px;
+        }
+    }
+
+    &--full {
+        width: 100%;
+        height: auto;
+    }
+
+    &--outline {
+        background-color: transparent;
+        border: 3px solid white;
+        color: white;
+        &:hover {
+            color: white;
+            background-color: $slate;
+            text-decoration: none;
+        }
+    }
+
+    // colors
+
+    &--blue {
+        background-color: $blue--shade;
+        color: white;
+        &:hover {
+            background-color: shade($blue--shade,10%);
+            color: white;
+        }
+    }
+    &--red {
+        background-color: $red;
+        color: white;
+        &:hover {
+            background-color: saturate($red,15%);
+            color: white;
+        }
+    }
+    &--yellow {
+        background-color: $yellow;
+        color: #333;
+        &:hover {
+            background-color: saturate($yellow,15%);
+            color: #333;
+        }
+    }
+    &--slate {
+        background-color: $slate;
+        color: white;
+        &:hover {
+            background-color: darken($slate,15%);
+            color: white;
+        }
+    }
+}
+    

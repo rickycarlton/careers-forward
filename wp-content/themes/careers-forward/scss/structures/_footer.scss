@@ -1,0 +1,21 @@
+// *************************************
+//
+//   Footer
+//   -> Footer styles
+//	 Location: footer.php
+//
+// *************************************
+
+.footer__logo {
+	background-image: url('/careers-forward/wp-content/themes/careers-forward/img/cf-logo-footer.png');
+	height: 97px;
+	width: 240px;
+	margin: 0 auto;
+}
+
+.footer__link {
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none; 
+	border: none;
+}

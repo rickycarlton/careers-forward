@@ -1,0 +1,17 @@
+// *************************************
+//
+//   Banner Images
+//   -> .banner-- ...
+//
+// *************************************
+
+.banner {
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	&--home {
+		@extend .banner;
+		background-image: url('/careers-forward/wp-content/themes/careers-forward/img/banner/banner-home.jpg');
+		background-position: top center;
+	}
+}
