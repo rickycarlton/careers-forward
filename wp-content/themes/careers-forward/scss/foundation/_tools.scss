@@ -89,6 +89,18 @@
     }
 }
 
+.dt {
+    display: table;
+}
+
+.dtc {
+    display: table-cell;
+}
+
+.vam {
+    vertical-align: middle;
+}
+
 // -------------------------------------
 //   Margins
 // -------------------------------------
@@ -537,6 +549,7 @@
 .pam {
     padding: $b-space;
     &m {
+        padding: $b-space-s;
         @media screen and (min-width: $g-m) {
              padding: $b-space;
         }
@@ -551,6 +564,7 @@
 .pal {
     padding: $b-space-l;
     &m {
+        padding: $b-space;
         @media screen and (min-width: $g-m) {
              padding: $b-space-l;
         }
@@ -1016,6 +1030,34 @@
     }
 }
 
+.tar {
+    text-align: right;
+    &m {
+        @media screen and (min-width: $g-m) {
+            text-align: right;
+        }
+    }
+    &mx {
+        @media screen and (max-width: $g-m-max) {
+            text-align: right;
+        }
+    }
+}
+
+.tal {
+    text-align: left;
+    &m {
+        @media screen and (min-width: $g-m) {
+            text-align: left;
+        }
+    }
+    &mx {
+        @media screen and (max-width: $g-m-max) {
+            text-align: left;
+        }
+    }
+}
+
 // ----- Color ----- //
 
 .tch {
@@ -1046,6 +1088,25 @@
     color: $slate--light;
 }
 
+.tcb {
+    color: $blue;
+}
+
+.tcb-dark {
+    color: darken($blue--shade, 15%);
+}
+
+.tcb-shade {
+    color: $blue--shade;
+}
+
+.tcr {
+    color: $red;
+}
+
+.tcy {
+    color: $yellow;
+}
 
 // ----- Family ----- //
 
@@ -1115,6 +1176,20 @@
     }
 }
 
+.tsxxl {
+    font-size: $b-fontSize-h1;
+    &m {
+        @media screen and (min-width: $g-m) {
+             font-size: $b-fontSize-h1;
+        }
+    }
+    &mx {
+        @media screen and (max-width: $g-m-max) {
+             font-size: $b-fontSize-h1;
+        }
+    }
+}
+
 // ----- Style ----- //
 
 .tsi {
@@ -1133,13 +1208,16 @@
     font-weight: normal;
 }
 
+.twsb {
+    font-weight: 600;
+}
+
 .twb {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 // ----- Clearfix ----- //
 
 .clear {
     zoom: 1;
-    clear: both;
 }

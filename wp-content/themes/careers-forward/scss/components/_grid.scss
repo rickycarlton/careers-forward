@@ -26,14 +26,15 @@
 #{$g-selector}g {
   @extend .group;
   display: block;
-  margin-left: -$g-gutter;
+  margin: 0 -$b-space-s;
 }
 
 #{$g-selector}g-b {
   box-sizing: border-box;
   float: left;
   margin: 0;
-  padding-left: $g-gutter;
+  padding-left: $b-space-s;
+  padding-right: $b-space-s;;
   width: 100%;
 }
 
@@ -47,6 +48,15 @@
   display: block;
   float: none;
   margin: 0 auto;
+}
+
+#{$g-selector}g-b--os {
+  box-sizing: border-box;
+  float: right;
+  margin: 0;
+  padding-left: $b-space-s;
+  padding-right: $b-space-s;
+  width: 100%;
 }
 
 // -------------------------------------

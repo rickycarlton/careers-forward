@@ -8,12 +8,11 @@
 .btn {
     color: #333;
     display: inline-block;
-    height: 60px;
     letter-spacing: 0.04em;
-    line-height: 60px;
+    height: 50px;
+    line-height: 50px;
     zoom: 1;
-    padding: $b-space-xs $b-space-l;
-    margin: 2px;
+    width: 100%;
     text-transform: uppercase;
     text-decoration: none;
     font-family: $b-fontFamily-heading;
@@ -23,6 +22,10 @@
     border: none;
     overflow: hidden;
     cursor: pointer;
+    @media screen and (min-width: $g-m) {
+        width: auto;
+        padding: 0 $b-space-l;
+    }
 
     &--wide {
         width: 100%;
@@ -30,6 +33,11 @@
         @media screen and (min-width: $g-m) {
             max-width: 350px;
         }
+    }
+
+    &--tall {
+        line-height: 60px;
+        height: 60px;
     }
 
     &--full {

@@ -14,8 +14,33 @@
 
 .card {
   background: $c-background-invert;
-  border-radius: $b-borderRadius;
   box-shadow: $b-boxShadow;
-  padding: $b-space;
   position: relative;
+}
+
+.card-img {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+
+	&.left {
+		left: 0;
+	}
+
+	&.right {
+		right: 0;
+	}
+}
+
+.card-btn {
+	margin-top: $b-space;
+	@media screen and (min-width: $g-m) {
+		margin-top: 0;
+		position: absolute;
+		top: 50%;
+		right: 40px;
+		margin-top: -25px;
+	}
 }

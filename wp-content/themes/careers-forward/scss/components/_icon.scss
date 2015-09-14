@@ -11,6 +11,10 @@
     text-align: center;
     vertical-align: top;
 
+    &--s {
+        font-size: $b-fontSize;
+    }
+
     &--l {
 	    font-size: 48px;
     }
@@ -20,12 +24,20 @@
     }
 
     &--circle {
-    	-moz-box-shadow: $blue 0 0 0 3px;
-    	-webkit-box-shadow: $blue 0 0 0 3px;
-    	box-shadow: $blue 0 0 0 3px;
+    	-moz-box-shadow: #ccc 0 0 0 3px;
+    	-webkit-box-shadow: #ccc 0 0 0 3px;
+    	box-shadow: #ccc 0 0 0 3px;
+        border-radius: 50%;
     	height: 100px;
     	width: 100px;
     	line-height: 100px;
     	font-size: 48px;
+
+        &--blue {
+            @extend .icn--circle;
+            -moz-box-shadow: $blue 0 0 0 3px;
+            -webkit-box-shadow: $blue 0 0 0 3px;
+            box-shadow: $blue 0 0 0 3px;
+        }
     }
 }

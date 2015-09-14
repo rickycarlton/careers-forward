@@ -74,12 +74,25 @@ h4, .h4 {
 // ----- Links ----- //
 
 a {
-  border-bottom: $b-border;
   color: $c-highlight;
   text-decoration: none;
   &:hover,
   &:focus {
     color: darken($c-highlight, 20%);
+  }
+
+  &.tci {
+    &:hover,
+    &:focus {
+      color: white;
+    }
+  }
+
+  &.tcb {
+    &:hover,
+    &:focus {
+      color: lighten($blue--shade, 30%);
+    }
   }
 }
 

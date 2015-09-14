@@ -34,7 +34,7 @@ $grey--warm--dark: #2B2A29;
 
 // ----- Base ----- //
 
-$c-background: #eee;
+$c-background: white;
 $c-background-invert: white;
 $c-highlight: saturate($blue, 10%);
 $c-border: lighten($blue, 30%);
@@ -79,8 +79,8 @@ $b-lineHeight: 1.5;
 
 // ----- Sizing ----- //
 
-$b-maxWidth: em(1024px);
 $b-maxWidth-s: em(700px);
+$b-maxWidth: em(1024px);
 $b-maxWidth-l: em(1200px);
 $b-space: 20px;
 $b-space-xs: $b-space * 0.25;
@@ -88,6 +88,7 @@ $b-space-s: $b-space * 0.5;
 $b-space-l: $b-space * 2;
 $b-space-xl: $b-space * 4;
 $b-space-xxl: $b-space * 6;
+$b-space-xxxl: $b-space * 8;
 
 // -------------------------------------
 //   Components

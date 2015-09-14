@@ -26,9 +26,11 @@
 // ----- Sizes ----- //
 
 .cell--s {
+	@extend .cell;
 	max-width: $b-maxWidth-s;
 }
 
 .cell--l {
+	@extend .cell;
 	max-width: $b-maxWidth-l;
 }

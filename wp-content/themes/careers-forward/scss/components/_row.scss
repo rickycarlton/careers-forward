@@ -43,6 +43,11 @@
 	background-color: $blue--light;
 }
 
+.row--blue--dark {
+	background-color: darken($blue,25%);
+}
+
+
 .row--red {
 	background-color: $red;
 }
