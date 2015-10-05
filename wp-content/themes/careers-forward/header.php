@@ -20,9 +20,9 @@
 		<div class="navBar__container">
 			<div class="navBar__logo"></div>
 			<div class="navBar__rightLinks">
-				<a href="/contact/">Contact Us</a>
-				<a href="/about/">About Us</a>
-				<a href="/careers/">Careers</a>
+				<a href="<?php echo $_SERVER['SERVER_NAME']; ?>/contact/">Contact Us</a>
+				<a href="<?php echo $_SERVER['SERVER_NAME']; ?>/about/">About Us</a>
+				<a href="<?php echo $_SERVER['SERVER_NAME']; ?>/careers/">Careers</a>
 			</div>
 		</div>
 	</div>

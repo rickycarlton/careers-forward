@@ -20,7 +20,7 @@
 </div>
 <div class="row">
 	<div class="cell--l well--xl">
-		<h2 class="tac">Cursus Euismod Ligula Magna Fermentum</h2>
+		<h2 class="tac">Who is Careers Forward?</h2>
 		<div class="g mtm clear">
 			<div class="g-b g-b--m--1of3">
 				<div class="db clear">
@@ -30,7 +30,7 @@
 						</div>
 						<div class="g-b g-b--3of4">
 							<div class="mts dib tsl twb">Pharetra Nibh</div>
-							<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+							<p>We truly understand the daily challenges you face in finding right fit talent for your organization.</p>
 						</div>
 					</div>
 				</div>
@@ -169,6 +169,9 @@
 				</div>
 			</div>
 		</div>
+		<div class="mtl clear tac">
+			<a class="btn btn--wide btn--blue" href="#">See All</a>
+		</div>
 	</div>
 </div>
 <div class="row row--blue--dark">
@@ -180,10 +183,10 @@
 	<div class="cell--l well--l">
 		<div class="g">
 			<div class="g-b g-b--m--3of4">
-				<div class="tsl tci">Maecenas sed diam eget risus varius blandit sit amet non magna.</div>
+				<div class="tsl tci">Tired of continuously filling the same positions over and over from the same talent pool?</div>
 			</div>
 			<div class="g-b g-b--m--1of4 tar">
-				<a href="/about/" class="tcb tsl"><span class="icn icn--s prxs icon-cf-arrow"></span>Learn More</a>
+				<a href="/contact/" class="tcb tsl"><span class="icn icn--s prxs icon-cf-arrow"></span>Learn More</a>
 			</div>
 		</div>
 	</div>

@@ -6,6 +6,22 @@
 // *************************************
 
 // -------------------------------------
+//   Mobile Toggles
+// -------------------------------------
+
+.no-mobile {
+    @media screen and (max-width: $g-m-max) {
+        display: none !important;
+    }
+}
+
+.no-desktop {
+    @media screen and (min-width: $g-m) {
+        display: none !important;
+    }
+}
+
+// -------------------------------------
 //   Background
 // -------------------------------------
 

@@ -570,7 +570,7 @@ html {
   color: #444444;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  line-height: 1.5; }
+  line-height: 2; }
 
 body {
   font-size: 100%;
@@ -666,6 +666,17 @@ img {
       top: 50%;
       right: 40px;
       margin-top: -25px; } }
+
+.card__img-v-align, .card__img-v-align--s {
+  position: absolute;
+  top: 50%;
+  left: 40px; }
+  .card__img-v-align.right, .right.card__img-v-align--s {
+    right: 40px; }
+  .card__img-v-align--s {
+    width: 50px;
+    height: 50px;
+    margin-top: -25px; }
 
 .cell, .cell--s, .cell--l {
   margin-left: auto;
@@ -1057,12 +1068,27 @@ img {
     border-radius: 50%;
     height: 100px;
     width: 100px;
-    line-height: 100px;
-    font-size: 48px; }
+    line-height: 100px; }
     .icn--circle--blue {
       -moz-box-shadow: #89ACAC 0 0 0 3px;
       -webkit-box-shadow: #89ACAC 0 0 0 3px;
       box-shadow: #89ACAC 0 0 0 3px; }
+
+.icn-v-align, .icn-v-align--l, .icn-v-align--xl {
+  position: absolute;
+  top: 50%; }
+  .icn-v-align.left, .left.icn-v-align--l, .left.icn-v-align--xl {
+    left: 0; }
+  .icn-v-align.right, .right.icn-v-align--l, .right.icn-v-align--xl {
+    right: 0; }
+  .icn-v-align--l {
+    width: 48px;
+    height: 48px;
+    margin-top: -24px; }
+  .icn-v-align--xl {
+    width: 96px;
+    height: 96px;
+    margin-top: -48px; }
 
 .btn {
   color: #333;
@@ -1208,6 +1234,14 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   border: none; }
+
+@media screen and (max-width: 49.9375em) {
+  .no-mobile {
+    display: none !important; } }
+
+@media screen and (min-width: 50em) {
+  .no-desktop {
+    display: none !important; } }
 
 .bch {
   background: #7fb6b6; }
