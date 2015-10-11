@@ -6,9 +6,6 @@
 	<div class="cell well--xxl tac">
 		<div class="g">
 			<div class="g-b--center g-b--m--6of10">
-				<!-- <div class="tac">
-					<span class="icn icn--l icon-cf-arrow tci"></span>
-				</div> -->
 				<h1 class="tci mtm">Aenean Ornare Fringilla Pharetra</h1>
 				<p class="tcg tsl">Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis.</p>
 				<div class="mtl">
@@ -170,16 +167,20 @@
 			</div>
 		</div>
 		<div class="mtl clear tac">
-			<a class="btn btn--wide btn--blue" href="#">See All</a>
+			<a class="btn btn--wide btn--slate" href="#">See All</a>
 		</div>
 	</div>
 </div>
 <div class="row row--blue--dark">
-	<div class="cell well--xl">
-		<div class="tac tci tsxxl twb ffh">Attract. Develop. Engage. Retain.</div>
+	<div class="cell well--xl tac">
+		<div class="tci tsxxl twb ffh">Attract. Develop. Engage. Retain.</div>
+		<p class="tcb-light">Tired of continuously filling the same positions over and over from the same talent pool?</p>
+		<div class="mtm">
+			<a href="/contact/" class="btn btn--wide btn--blue">Learn More</a>
+		</div>
 	</div>
 </div>
-<div class="row row--grey--warm--dark">
+<!-- <div class="row row--grey--warm--dark">
 	<div class="cell--l well--l">
 		<div class="g">
 			<div class="g-b g-b--m--3of4">
@@ -190,6 +191,6 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 
 <?php get_footer(); ?>

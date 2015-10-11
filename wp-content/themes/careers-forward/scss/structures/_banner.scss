@@ -13,5 +13,52 @@
 		@extend .banner;
 		background-image: url('/careers-forward/wp-content/themes/careers-forward/img/banner/banner-home.jpg');
 		background-position: top center;
+		background-attachment: fixed;
+	}
+
+	// About Us page
+
+	&--about {
+		@extend .banner;
+		background-image: url('/careers-forward/wp-content/themes/careers-forward/img/banner/banner-about.jpg');
+		background-position: top center;
+		background-attachment: fixed;
+	}
+
+	&--office {
+		@extend .banner;
+		background-image: url('/careers-forward/wp-content/themes/careers-forward/img/banner/banner-office.jpg');
+		background-position: top center;
+		background-attachment: fixed;
+	}
+
+	// Careers page
+
+	&--careers {
+		@extend .banner;
+		background-image: url('/careers-forward/wp-content/themes/careers-forward/img/banner/banner-careers.jpg');
+		background-position: top center;
+		background-attachment: fixed;
+	}
+
+	&--job--a {
+		@extend .banner;
+		background-image: url('/careers-forward/wp-content/themes/careers-forward/img/banner/banner--job--a.jpg');
+		background-position: top center;
+		background-attachment: fixed;
+	}
+
+	&--job--b {
+		@extend .banner;
+		background-image: url('/careers-forward/wp-content/themes/careers-forward/img/banner/banner--job--b.jpg');
+		background-position: top center;
+		background-attachment: fixed;
+	}
+
+	&--job--c {
+		@extend .banner;
+		background-image: url('/careers-forward/wp-content/themes/careers-forward/img/banner/banner--job--c.jpg');
+		background-position: top center;
+		background-attachment: fixed;
 	}
 }

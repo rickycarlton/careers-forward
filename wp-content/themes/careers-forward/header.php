@@ -18,7 +18,9 @@
 <div class="navBar">
 	<div class="navBar__cell">
 		<div class="navBar__container">
-			<div class="navBar__logo"></div>
+			<a href="/careers-forward/">
+				<div class="navBar__logo"></div>
+			</a>
 			<div class="navBar__rightLinks">
 				<a href="<?php echo $_SERVER['SERVER_NAME']; ?>/contact/">Contact Us</a>
 				<a href="<?php echo $_SERVER['SERVER_NAME']; ?>/about/">About Us</a>

@@ -1,7 +1,8 @@
 
 
-<script type="text/javascript" src="/wp-content/themes/careers-forward/js/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="/wp-content/themes/careers-forward/js/init.js"></script>
+<script type="text/javascript" src="/careers-forward/wp-content/themes/careers-forward/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="/careers-forward/wp-content/themes/careers-forward/js/plugins/jquery.matchHeight-min.js"></script>
+<script type="text/javascript" src="/careers-forward/wp-content/themes/careers-forward/js/init.js"></script>
 
 <?php wp_footer(); ?>
 
@@ -16,13 +17,13 @@
 							<a href="/" class="footer__link">Home</a>
 						</div>
 						<div class="g-b g-b--m--1of4">
-							<a href="/" class="footer__link">Careers</a>
+							<a href="<?php echo $_SERVER['SERVER_NAME']; ?>/careers/" class="footer__link">Careers</a>
 						</div>
 						<div class="g-b g-b--m--1of4">
-							<a href="/" class="footer__link">About</a>
+							<a href="<?php echo $_SERVER['SERVER_NAME']; ?>/about/" class="footer__link">About</a>
 						</div>
 						<div class="g-b g-b--m--1of4">
-							<a href="/" class="footer__link">Contact</a>
+							<a href="<?php echo $_SERVER['SERVER_NAME']; ?>/contact/" class="footer__link">Contact</a>
 						</div>
 					</div>
 				</div>
