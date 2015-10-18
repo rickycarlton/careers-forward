@@ -21,14 +21,40 @@
 }
 
 .navBar__mobileNav {
-	display: block;
-	background-color: #ccc;
-	position: absolute;
-	top: -50px;
-	width: 100%;
+	display: none; 
+	&.is-active {
+		display: block;
+		background: rgba($slate,0.98);
+		position: fixed;
+		height: 100%;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		z-index: 200;
+	}
 	@media screen and (min-width: $g-m) {
 		display: none;
 	}
+}
+
+.navBar__mobileLinks {
+	text-align: center;
+	a {
+		color: white;
+		font-size: $b-fontSize-xl;
+		margin-bottom: $b-space-s;
+		display: block;
+		width: 100%;
+	}
+}
+
+.navBar__mobileLinks--title {
+	width: 50%;
+	margin: $b-space-xl auto $b-space-l auto;
+	color: $slate--light;
+	font-family: $b-fontFamily-heading;
+	border-bottom: 2px solid $slate--light;
 }
 
 .navBar__cell {
@@ -45,13 +71,14 @@
 	height: 24px;
 	width: 264px;
 	margin: 12px auto 0 auto;
+	z-index: 201;
 
 	@media screen and (min-width: $g-m) {
 		background-image: url('/careers-forward/wp-content/themes/careers-forward/img/cf-logo-main.png');
-		left: 0;
-		margin: 10px 0;
-		height: 60px;
-		width: 184px;
+		left: 15px;
+		margin: 12px 0;
+		height: 54px;
+		width: 166px;
 		position: absolute;
 	}
 }
@@ -72,4 +99,74 @@
 			float: right;
 		}
 	}
+}
+
+// Hamburger for mobile
+$bar-width: 26px;
+$bar-height: 4px;
+$bar-spacing: 10px;
+
+.hamburger-menu {
+	line-height: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 0 0 10px;
+	width: $bar-width;
+	height: $bar-height + $bar-spacing*2;
+	cursor: pointer;
+	z-index: 202;
+	@media screen and (min-width: $g-m) {
+		display: none;
+	}
+}
+
+.bar,
+.bar:after,
+.bar:before {
+	width: $bar-width;
+	height: $bar-height;
+}
+
+.bar {
+	position: relative;
+	transform: translateY($bar-spacing);
+	background: rgba($blue, 1);
+	transition: all 0ms 300ms;
+  
+  &.animate {
+    background: rgba($blue, 0); 
+  }
+}
+
+.bar:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: $bar-spacing;
+	background: rgba($blue, 1);
+	transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: $bar-spacing;
+	background: rgba($blue, 1);
+	transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar.animate:after {
+	top: 0;
+	transform: rotate(45deg);
+	transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+}
+
+.bar.animate:before {
+	bottom: 0;
+	transform: rotate(-45deg);
+	transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
 }

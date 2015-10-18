@@ -18,6 +18,9 @@
 <div class="navBar">
 	<div class="navBar__cell">
 		<div class="navBar__container">
+			<div class="hamburger-menu">
+				<div class="bar"></div>	
+			</div>
 			<a href="/careers-forward/">
 				<div class="navBar__logo"></div>
 			</a>
@@ -31,8 +34,10 @@
 </div>
 <div class="navBar__mobileNav">
 	<div class="navBar__mobileLinks">
-		<a href="/contact/">Contact Us</a>
-		<a href="/about/">About Us</a>
-		<a href="/careers/">Careers</a>
+		<div class="navBar__mobileLinks--title">Navigation</div>
+		<a href="<?php echo $_SERVER['SERVER_NAME']; ?>/">Home</a>
+		<a href="<?php echo $_SERVER['SERVER_NAME']; ?>/careers/">Careers</a>
+		<a href="<?php echo $_SERVER['SERVER_NAME']; ?>/about/">About Us</a>
+		<a href="<?php echo $_SERVER['SERVER_NAME']; ?>/contact/">Contact Us</a>
 	</div>
 </div>

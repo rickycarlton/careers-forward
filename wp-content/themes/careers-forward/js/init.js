@@ -64,6 +64,15 @@ $(document).ready(function() {
 	 
 	})(jQuery,'smartresize');
 
+	// hamburger menu
+
+	(function () {
+		$('.hamburger-menu').on('click', function() {
+			$('.bar').toggleClass('animate');
+			$('.navBar__mobileNav').toggleClass('is-active');
+		})
+	})();
+
 	// matchHeight plugin
 
 	function matchHeightFunction() {
